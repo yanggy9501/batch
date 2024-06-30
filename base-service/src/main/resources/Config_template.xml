@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <input type="file">
+        <sources>
+            <source>/sdata/E00/S80/env{系统环境变量}</source>
+            <source>/sdata/E00/S80/param{参数值}</source>
+            <source>/sdata/E00/S80/date(模板，如：yyyyMMdd)</source>
+        </sources>
+        <columns Split="separator|fixedLength">
+            <column alias="column alias name" type="Date|String|Integer|int|long|Long|boolean|Boolean|Decimal|..."
+                    format="如时间类型 yyyy-MM-dd HH:mm:ss"
+
+                    trueRule="true,yes,y,1"
+                    falseRule="false,no,n,0"
+
+                    emptyTo="false"
+            />
+        </columns>
+    </input>
+
+    <output type="mysql">
+
+    </output>
+
+</config>

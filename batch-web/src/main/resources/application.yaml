@@ -1,0 +1,16 @@
+spring:
+  batch:
+    job:
+      enabled: false # 不随 SpringBoot启动而启动
+
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.134.128:3306/db_test?serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true&allowLoadLocalInfile=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  configuration:
+    default-executor-type: batch
+
+
